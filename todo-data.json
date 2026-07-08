@@ -229,4 +229,19 @@
       "bs": "target end-to-end models"
     }
   }
+  {
+    "id": 11,
+    "name": "Brandon Wolfgang",
+    "username": "Brandon",
+    "email": "test@test.com",
+    "address": {
+      "street": "Test Plains",
+      "suite": "Test 879",
+      "city": "Test",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    }
 ]
