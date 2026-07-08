@@ -11,8 +11,8 @@ phases:
     commands:
       - echo build Docker image on `date`
       - cd src
-      - docker build -t brandonminicapstone:latest .
-      - docker tag brandonminicapstone:latest 962804699607.dkr.ecr.us-west-2.amazonaws.com/brandon/minicapstone:latest
+      - docker build -t brandon/minicapstone .
+      - docker tag brandon/minicapstone:latest 962804699607.dkr.ecr.us-west-2.amazonaws.com/brandon/minicapstone:latest
   post_build:
     commands:
       - echo build Docker image complete `date`
