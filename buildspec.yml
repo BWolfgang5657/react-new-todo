@@ -19,6 +19,6 @@ commands:
 - echo push latest Docker images to ECR...
 - docker push 962804699607.dkr.ecr.us-west-2.amazonaws.com/brandon/minicapstone:latest
 - echo Writing image definitions file...
-- printf '[{"name":"<container name>","imageUri":"962804699607.dkr.ecr.us-west-2.amazonaws.com/brandon/minicapstone:latest"}]' > imagedefinitions.json
+- printf '[{"name":"brandon-capstone-task","imageUri":"962804699607.dkr.ecr.us-west-2.amazonaws.com/brandon/minicapstone:latest"}]' > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
