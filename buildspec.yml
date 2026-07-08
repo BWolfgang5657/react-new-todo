@@ -13,7 +13,6 @@ commands:
 - cd src
 - docker build -t brandonminicapstone:latest .
 - docker tag brandonminicapstone:latest 962804699607.dkr.ecr.us-west-2.amazonaws.com/brandon/minicapstone:latest
-post_build:
 commands:
 - echo build Docker image complete `date`
 - echo push latest Docker images to ECR...
@@ -21,4 +20,4 @@ commands:
 - echo Writing image definitions file...
 - printf '[{"name":"brandon-capstone-task","imageUri":"962804699607.dkr.ecr.us-west-2.amazonaws.com/brandon/minicapstone:latest"}]' > imagedefinitions.json
 artifacts:
-  files: imagedefinitions.json
+files: imagedefinitions.json
